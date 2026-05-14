@@ -1,0 +1,22 @@
+h1 {
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+.socials {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+img.soc {
+    width: 10vmax;
+}
+a {
+    text-decoration: none;
+}
+
+h1.rainbow {
+    -webkit-animation: colorchange 2s infinite alternate;
+    -moz-animation: colorchange 2s infinite alternate;
+    z-index: 0;
+}
