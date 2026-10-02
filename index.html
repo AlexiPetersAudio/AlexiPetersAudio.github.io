@@ -1,32 +1,49 @@
-<html>
-    <head>
-        <link rel='stylesheet' href='/public_html/css/index.css'>
-        <link rel='stylesheet' href='/public_html/css/font_stuff.css'>
-        <title>Alexi</title>
-        <link rel="icon" type="image/x-icon" href="/images/logos/alexi_face.png">
-    </head>
-    <body class='background'>
-    </body>
-    <body >
-        <h1 class='rainbow'>
-            &nbsp________________________<br>
-            / Welcome/Καλωσορίσατε, to \<br> 
-            \ Alexi's website  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp/<br> 
-            &nbsp------------------------<br>
-             &nbsp&nbsp\&nbsp&nbsp&nbsp^__^<br>
-             &nbsp&nbsp&nbsp\&nbsp&nbsp(oo)\______<br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(__)\&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp)\/\<br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp||--w |<br>
-             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp||&nbsp&nbsp&nbsp||<br>
-             <br>
-        </h1>
-        <div class='socials' >
-            <h1>
-                <!-- <a href='https://joshschaaf.com/images/resume/cv.pdf' rel="noopener noreferrer">
-                    <img alt='updated CV' src='images/logos/updated-CV.gif' class='soc'>
-                </a> -->
-                &nbsp
-            </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alexi Peters</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Clean, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Alexi Peters</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero section fade-in">
+        <h1>Hi, I'm <span class="highlight">Alexi</span>.</h1>
+        <p>holding space</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </header>
+
+<section id="portfolio" class="section">
+        <h2>Selected Works</h2>
+        <p class="subtitle">Click the albums to listen.</p>
+        
+        <div class="album-showcase" id="portfolio-grid">
+            <!-- JavaScript will inject the albums here automatically -->
         </div>
-    </body>
+    </section>
+
+    <section id="contact" class="section fade-in">
+        <h2>Let's Connect</h2>
+        <p>Currently open for new opportunities and collaborations.</p>
+        <a href="mailto:hello@example.com" class="btn">Say Hello</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Alexi Peters.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
