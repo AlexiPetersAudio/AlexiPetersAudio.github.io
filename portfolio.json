@@ -1,38 +1,65 @@
 [
     {
-        "title": "Midnight Vibes",
-        "artist": "The Synthtones",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+1",
-        "link": "https://link-to-stream.com"
+        "title": "You Want it? We Got it!",
+        "artist": "Hot Seat",
+        "image": "music/youwantitwegotit.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_m15COksGAOTl09DjXLztzldqmZ4Yem018&si=8U98lAQoVcRB30vD",
+        "credits": ["Recording", "Mixing"]
     },
     {
-        "title": "Echoes",
-        "artist": "Luna Ray",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+2",
-        "link": "https://link-to-stream.com"
+        "title": "Common Patterns",
+        "artist": "Lowercoaster",
+        "image": "music/lowercoaster.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_n4kd2TleD0nnxA8lwbmfN8UYDob6uLypo",
+        "credits": ["Recording Drums", "Mixing"]
     },
     {
-        "title": "Analog Dreams",
-        "artist": "Frequency",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+3",
-        "link": "https://link-to-stream.com"
+        "title": "Lowercoaster",
+        "artist": "Lowercoaster",
+        "image": "music/lowercoaster_ep1.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_liVafg4j4jo5q8G1rGOn4rQVgtFvWUvHQ",
+        "credits": ["Recording", "Mixing", "Mastering"]
     },
     {
-        "title": "Analog Dreams",
-        "artist": "Frequency",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+3",
-        "link": "https://link-to-stream.com"
+        "title": "Play Happy",
+        "artist": "Steve Katona",
+        "image": "music/play_happy.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_neL8UkmnPaD8VH7HaM2giKXoN4MMNcrDE",
+        "credits": ["Recording Drums"]
     },
     {
-        "title": "Analog Dreams",
-        "artist": "Frequency",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+3",
-        "link": "https://link-to-stream.com"
+        "title": "Another Year Around",
+        "artist": "Sani Bronco",
+        "image": "music/sani_bronco.jpg",
+        "link": "https://music.youtube.com/watch?v=ofUoiD-5ayc",
+        "credits": ["Recording Drums"]
     },
     {
-        "title": "Analog Dreams",
-        "artist": "Frequency",
-        "image": "https://placehold.co/600x600/1e293b/38bdf8?text=Album+3",
-        "link": "https://link-to-stream.com"
+        "title": "Breathe",
+        "artist": "The Pof",
+        "image": "music/pof.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_kET4-nhzn46-yQdjnC6BU-LNynsPI5XBM",
+        "credits": ["Recording Drums"]
+    },
+    {
+        "title": "Enjoying Peace",
+        "artist": "Alexi Peters",
+        "image": "music/enjoying_peace.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_ljbM0bkpk_KWJQQNhPgjAwpZ6kMMzOuJc",
+        "credits": ["Writing", "Performing", "Producing", "Recording", "Mixing"]
+    },
+    {
+        "title": "almost blue",
+        "artist": "Jenny Li",
+        "image": "music/almost_blue.jpg",
+        "link": "https://music.youtube.com/playlist?list=OLAK5uy_lcGSp8p69o_dM0QKxZdYPmtFe3mQbQ_Po",
+        "credits": ["Producing", "Performing", "Recording", "Mixing", "Mastering"]
+    },
+    {
+        "title": "When the Light Fades",
+        "artist": "Mijkalena Smith",
+        "image": "music/mijka_dance.png",
+        "link": "https://www.mijkalenasmith.com/the-film?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+        "credits": ["Writing", "Performing", "Producing", "Recording", "Mixing", "Mastering"]
     }
 ]
