@@ -49,6 +49,15 @@ h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600; }
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    white-space: nowrap; /* Prevents the text from wrapping to a second line */
+    flex-shrink: 0;      /* Keeps the navigation bar from compressing the logo width */
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .nav-links {
@@ -283,4 +292,98 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0); 
+}
+
+/* --- SECTION FLEX LAYOUTS --- */
+.hero-content,
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+}
+
+.hero-text,
+.contact-text {
+    flex: 1;
+    max-width: 450px;
+}
+
+/* --- BASE IMAGE STYLING --- */
+.section-images {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1.2;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.feature-img {
+    width: 100%;
+    height: auto;           /* Retains natural aspect ratio */
+    border-radius: 12px;    /* Smooth rounded corners */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.65);
+}
+
+/* --- HERO IMAGES (SLIGHTLY OFF-SCREEN AT TOP) --- */
+.hero-images {
+    margin-top: -100px;     /* Pulls images upward so tops peek off-screen */
+}
+
+.hero-images .feature-img {
+    max-width: 500px;       /* Larger hero sizing */
+}
+
+/* --- CONTACT IMAGES (FULL / EXTRA LARGE SIZE) --- */
+.contact-images .feature-img {
+    max-width: 700px;       /* Full size display in contact section */
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    .hero-content,
+    .contact-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .hero-text,
+    .contact-text {
+        max-width: 100%;
+    }
+
+    /* Reset negative margin on mobile so images stack naturally */
+    .hero-images {
+        margin-top: 0;
+    }
+
+    .section-images {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .hero-images .feature-img,
+    .contact-images .feature-img {
+        max-width: 48%;     /* Keeps side-by-side pair scalable on smaller displays */
+    }
+}
+
+/* --- HERO TITLE NO-WRAP --- */
+.hero h1 {
+    white-space: nowrap; /* Prevents "Alexi Peters | Audio" from wrapping */
+}
+
+/* Ensure the text container has enough room for the 4rem title */
+.hero-text {
+    flex: 1;
+    max-width: 620px;   /* Increased width so the title fits comfortably */
 }
