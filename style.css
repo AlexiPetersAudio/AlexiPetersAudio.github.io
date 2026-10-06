@@ -175,7 +175,7 @@ h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600; }
 }
 
 .album-wrapper:hover .album-cover {
-/* Uses --hover-tilt set dynamically by JavaScript, defaulting to -3deg */
+    /* Uses --hover-tilt set dynamically by JavaScript, defaulting to -3deg */
     transform: translateY(-120px) rotate(var(--hover-tilt, -3deg));
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
@@ -241,6 +241,7 @@ h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600; }
     background: var(--accent-color);
     color: var(--bg-color);
 }
+
 /* --- RESPONSIVE GRID ADAPTATION --- */
 
 /* Split-screen & Tablet View (Matches 1920x1080 half-screen / ~960px) */
@@ -264,16 +265,73 @@ h2 { font-size: 2.5rem; margin-bottom: 1rem; font-weight: 600; }
 
 /* Mobile View (Single Column) */
 @media (max-width: 600px) {
+    /* --- NAVBAR MOBILE FIXES --- */
+    .navbar {
+        padding: 1rem 4%; 
+    }
+
+    .logo {
+        font-size: 1.1rem; 
+    }
+
+    .nav-links {
+        gap: 1rem; 
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; 
+    }
+
+    /* --- GRID AND ALBUM FIXES --- */
     .album-showcase {
         grid-template-columns: 1fr;
-        row-gap: 4.5rem;
+        row-gap: 4rem; /* Spacing between the bottom of a description box and the next album */
     }
 
     /* Remove stagger on single-column layout */
     .album-wrapper:nth-child(even) {
         margin-top: 0;
     }
+
+    /* Set up flex layout to easily center the in-flow box */
+    .album-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Move description boxes into normal document flow */
+    .floating-box {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: 0.4rem auto 0 auto; 
+        transform: none !important; 
+    }
+
+    /* Disable scroll animations */
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* Disable hover animations and lock styles in their default resting state */
+    .album-cover,
+    .floating-box {
+        transition: none !important;
+    }
+
+    .album-wrapper:hover .album-cover {
+        transform: none !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .album-wrapper:hover .floating-box {
+        transform: none !important; 
+        background: var(--card-bg) !important;
+    }
 }
+
 /* --- FOOTER --- */
 footer {
     text-align: center;
@@ -339,12 +397,12 @@ footer {
 }
 
 .hero-images .feature-img {
-    max-width: 500px;       /* Larger hero sizing */
+    max-width: 500px;       /* Larger hero sizing (Corrected from 5000px) */
 }
 
 /* --- CONTACT IMAGES (FULL / EXTRA LARGE SIZE) --- */
 .contact-images .feature-img {
-    max-width: 700px;       /* Full size display in contact section */
+    max-width: 700px;       /* Full size display in contact section (Corrected from 7000px) */
 }
 
 /* --- MOBILE RESPONSIVENESS --- */
@@ -364,6 +422,7 @@ footer {
     /* Reset negative margin on mobile so images stack naturally */
     .hero-images {
         margin-top: 0;
+        width: 100%; /* Ensures the image container takes full width */
     }
 
     .section-images {
@@ -371,9 +430,15 @@ footer {
         width: 100%;
     }
 
-    .hero-images .feature-img,
+    /* Let the single hero image take the full screen width */
+    .hero-images .feature-img {
+        max-width: 100%; /* Overrides the previous restriction */
+        width: 100%;
+    }
+
+    /* Keep contact images side-by-side if you still have two there */
     .contact-images .feature-img {
-        max-width: 48%;     /* Keeps side-by-side pair scalable on smaller displays */
+        max-width: 48%;     
     }
 }
 
